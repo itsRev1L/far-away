@@ -35,7 +35,7 @@ function App() {
           onDeleteItem={handleDeleteItem}
           onToggleItems={handlePacked}
         />
-        <Stats />
+        <Stats items={items} />
       </div>
     </>
   );
