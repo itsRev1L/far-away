@@ -23,6 +23,9 @@ function App() {
       )
     );
   }
+  function clearList() {
+    setItems([]);
+  }
 
   return (
     <>
@@ -33,6 +36,7 @@ function App() {
           items={items}
           onDeleteItem={handleDeleteItem}
           onToggleItems={handlePacked}
+          onClearList={clearList}
         />
         <Stats items={items} />
       </div>
